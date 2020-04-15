@@ -13,14 +13,14 @@
 
 > Rebot.
 
-![GIF_1](docs/E1.gif)
+
 
 
 **Entrega 3**
 
 > Calculem la magnitud de la línia cridant al mètode del objecte PVector que ens fa el càlcul d'aquesta (sqrt(x*x + y*y)).
 
-![GIF_2](docs/E2.gif)
+![GIF_1](docs/E1.gif)
 
 
 **Entrega 4**
@@ -28,11 +28,11 @@
 > El valor de la magnitud on cop normalitzat el vector és d'entre 0 i 1. Llavors el mutipliquem per 250 per veure'l més bé en la pantalla.
 > Un vector unitari és el que representa un valor entre 0 i 1 i que ens dirà la direcció en la que es troba.
 
-![GIF_3](docs/E3.gif)
+![GIF_2](docs/E2.gif)
 
 
 **Entrega 5**
 
 >
 
-<!--![GIF_4](docs/E4.gif)--!>
+![GIF_3](docs/E3.gif)
