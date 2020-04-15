@@ -1,3 +1,9 @@
+/**
+  
+  Classe Walker que s'encarregarà del moviment dels objectes segons un número aleatori. 
+  També ens retornarà la posició d'aquest objecte en cada frame.
+
+*/
 class Walker {
  
   int x;

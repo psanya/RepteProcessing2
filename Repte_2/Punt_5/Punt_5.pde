@@ -1,9 +1,11 @@
+//  Declaració de les variables necessàries.
 Character warrior, enemy;
 PVector posW, posE, posicioWinner;
 int x,y, wX, wY, eX, eY;
 String nomW, nomE; 
 float m;
 
+//  En el setup cridem els setters de cada un dels objectes i els posicionem al centre de la pantalla distanciats.
 void setup() {
   size (1280,720);
   x = width/2;
@@ -12,10 +14,10 @@ void setup() {
   warrior = new Character();
   enemy = new Character();
  
-  warrior.setVides(1);
+  warrior.setVides(5);
   warrior.setNom("Warrior");
 
-  enemy.setVides(1);
+  enemy.setVides(3);
   enemy.setNom("Enemy");
   
   nomW = warrior.getNom();
@@ -26,10 +28,12 @@ void setup() {
   
   enemy.x = width/2 + 30;
   enemy.y = height/2;
-
   
 }
 
+// En el draw() cridem el mètode walk() de la classe Walker() per moure els objectes aleatoriament.
+// Calculem la distància que hi ha entre els dos amb el càlcul de la classe PVector i segons la
+// distància a la que es trobin restarem vida a un o a l'altre objecte.
 void draw() {
   background(255);
   fill(0);
@@ -62,6 +66,8 @@ void draw() {
   text(nomE, eX - 20, eY + 30);
   text("Vides E:\n    " + enemy.getVides(), eX - 20, eY - 45);
   
+  //  Si la distància és més propera a la victòria del Warrior ficarem el text de distància de color verd, si és més
+  //  propera al Enemy, de color vermell, i si és un entremig, de color negre.
   if (m > 80) {
     fill(0, 163, 0);
   }
@@ -138,6 +144,7 @@ void draw() {
   
 }
 
+//  Mètode que farem servir cada cop que un dels objectes perdi una vida per centrar-los de nou a la pantalla.
 private void restart(){
 
   warrior.x = width/2 - 30;

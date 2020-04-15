@@ -1,3 +1,9 @@
+/**
+  
+  Classe PVector que ens permetra sumar, restar, multiplicar, dividir i normalitzar un vector.
+  Així com també, saber-ne la magnitud.
+
+*/
 class PVector {
 
   float x;
